@@ -1,0 +1,16 @@
+<tr>
+  <td>
+    
+    <%= image_tag product.image.tiny, :class => 'order-product-img' %>
+  </td>
+  <td>
+    <h3 class = "order-product-name"><%= product.name %></h3>
+    <p class = "order-product-desc"><%= product.description %></p>
+  </td>
+  <td>
+    X<%= quantity %>
+  </td>
+    <td>
+    <%= humanized_money_with_symbol quantity * product.price %>
+  </td>
+</tr>
