@@ -15,3 +15,20 @@ body {
 form.button_to {
   display: inline;
 }
+
+td>p.order-product-desc{
+  font-size: 1em;
+}
+
+td>img.order-product-img{
+  border-radius: 8px;
+  vertical-align:top;
+
+}
+
+.order-table>tbody>tr>td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
