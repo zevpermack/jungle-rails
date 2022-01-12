@@ -31,4 +31,15 @@ td>img.order-product-img{
   padding-right: 5px;
 }
 
+.banner {
+  background-image: url(/assets/jungle.jpeg);
+  background-size: cover;
+}
+
+.about-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 150px 75px 75px;
+
+}
 
