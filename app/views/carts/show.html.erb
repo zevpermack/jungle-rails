@@ -3,6 +3,13 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
+  <% if enhanced_cart.length < 1%>
+  
+  <h2 class = "alert alert-warning py-0"> Select items for your cart before checking out <br>
+  <%= link_to 'Continue Shopping', :root%>
+  </h2>
+  
+  <% else%>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -48,5 +55,6 @@
       <% end %>
     </div>
   </div>
+  <% end%>
 
 </section>
