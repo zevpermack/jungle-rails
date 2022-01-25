@@ -10,7 +10,7 @@ RSpec.describe Product, type: :model do
         @product.category = @category
         @product.quantity = 35
         @product.price = 223
-        expect(@product.validate).to be true
+        expect(@product).to be_valid
       end
     end
 
