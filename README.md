@@ -32,12 +32,16 @@ Opening up to Jungle homepage
 ## Usage
 - Scroll and click to view details about products
 - Click add to put items in your cart
+- View added items from the nav with My Cart
 
-!["Booking Appointment"](https://github.com/rewpt/scheduler/blob/master/docs/BookingAppt.png?raw=true)
-Booking an appointment
+!["Check out my cart"](https://github.com/rewpt/jungle-rails/blob/master/app/assets/images/mycart.png?raw=true)
+Managing your cart
 
-!["Viewing appointments"](https://github.com/rewpt/scheduler/blob/master/docs/BookedAppts.png?raw=true)
-Viewing booked appointments
+!["Checking out"](https://github.com/rewpt/scheduler/blob/master/docs/BookedAppts.png?raw=true)
+Checking out
+
+## Stripe Testing
+* Use Credit Card # 4111 1111 1111 1111, any CVC and any forward date expiry for testing success scenarios.
 
 ## Features
 - Record Keeping
@@ -93,8 +97,6 @@ npm run cypress
 3. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
 
 
-
-## Stripe Testing
 
 
 
