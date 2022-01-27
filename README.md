@@ -25,31 +25,43 @@ Users can add items into their cart and checkout with stripe while admin access 
 ## In the Browser
 - Navigate to your server `localhost:3000/`
 
+--------------------------------------------------
+> Opening up to Jungle homepage
 
 !["Jungle Home"](https://github.com/rewpt/jungle-rails/blob/master/app/assets/images/homepage.png?raw=true)
-Opening up to Jungle homepage
+
+
+--------------------------------------------------
 
 ## Usage
 - Scroll and click to view details about products
 - Click add to put items in your cart
 - View added items from the nav with My Cart
+--------------------------------------------------
+> Managing your cart
 
 !["Check out my cart"](https://github.com/rewpt/jungle-rails/blob/master/app/assets/images/mycart.png?raw=true)
-Managing your cart
 
-!["Checking out"](https://github.com/rewpt/scheduler/blob/master/docs/BookedAppts.png?raw=true)
-Checking out
+
+--------------------------------------------------
+> Checking out
+
+!["Checking out"](https://github.com/rewpt/jungle-rails/blob/master/app/assets/images/checking_out.png?raw=true)
+
+
+--------------------------------------------------
+
 
 ## Stripe Testing
 * Use Credit Card # 4111 1111 1111 1111, any CVC and any forward date expiry for testing success scenarios.
 
 ## Features
-- Record Keeping
-  - Spots remaining will update automatically for each day, showing which spots are available during the week.
-- Express back-end
-  - Appointments saved will be remembered for next visit
-- Error handling
-  - Appointments unable to be saved or deleted will show an error
+> Users
+  - Pick items to be added or deleted from your cart and checkout
+> Admin Function
+  - Maintain categories, items, product and sales to be displayed for users
+> Error handling
+  - Users cannot checkout without any items in cart
 
 
 ## Dependencies
@@ -61,46 +73,12 @@ Checking out
 
 ## Testing
 
-## Running Webpack Development Server
-
+- Runs Rspec with capybara for end to end tests
+- Use specific files name with features/filename to decrease runtime  
 ```sh
-npm start
-```
-
-## Running Jest Test Framework
-
-```sh
-npm test
-```
-
-## Running Storybook Visual Testbed
-
-```sh
-npm run storybook
-```
-
-## Running Cypress (make sure dev dependencies installed)
-
-```sh
-npm run cypress
+bin/rspec spec/features
 ```
 --------------------------------------------------
-# Jungle
-
-
-
-## Additional Steps for Apple M1 Machines
-
-1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
-1. Install ImageMagick `brew install imagemagick imagemagick@6 --build-from-source`
-2. Remove Gemfile.lock
-3. Replace Gemfile with version provided [here](https://gist.githubusercontent.com/FrancisBourgouin/831795ae12c4704687a0c2496d91a727/raw/ce8e2104f725f43e56650d404169c7b11c33a5c5/Gemfile)
-
-
-
-
-
-## Dependencies
 
 
 
