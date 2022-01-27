@@ -17,7 +17,7 @@ RSpec.feature "Visitor navigates to a product page", type: :feature, js: true do
     end
   end
 
-  scenario "They see the page for the clicked on first product" do
+  scenario "They see the page for the clicked on product" do
     # ACT
     visit root_path
     ele = page.find('body > main > section > div > article:nth-child(1) > header > a')
