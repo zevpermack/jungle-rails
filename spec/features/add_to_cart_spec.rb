@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to a product page", type: :feature, js: true do
+RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -17,20 +17,15 @@ RSpec.feature "Visitor navigates to a product page", type: :feature, js: true do
     end
   end
 
-  scenario "They see the page for the clicked on first product" do
+  scenario "They see all products" do
     # ACT
     visit root_path
-    ele = page.find('body > main > section > div > article:nth-child(1) > header > a')
-    ele.click
-
+    ele = page.click_on('Add', match: :first)
     # DEBUG
     sleep(1)
     save_screenshot
 
     # VERIFY
-    expect(page).to have_css 'img.main-img'
-    expect(page).to have_css 'body > main > section > header > h1 > a'
-
-
+    expect(page.has_content?('My Cart(1)')).to eq(true) 
   end
 end
