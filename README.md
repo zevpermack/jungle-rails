@@ -1,7 +1,8 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2. 
-Users can add items into their cart and checkout with stripe while admin access allows maintenance of the
+Users can add items into their cart and checkout with stripe. 
+Admin access allows for deeper permissions to maintain and modify the application 
 
 https://user-images.githubusercontent.com/38580490/161855875-448bab62-a2e9-4925-bdf9-65b3929079bf.mov
 
